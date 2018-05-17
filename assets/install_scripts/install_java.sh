@@ -6,11 +6,11 @@ mkdir -p /alfresco/java
 
 # unzip java archive
 cd /tmp
-tar -xvf /tmp/jdk1.8.0_65.tar
+tar -xvzf /tmp/jdk-8u111-linux-x64.tar.gz
 
 # move unzipped folder to the created folder
-mv /tmp/jdk1.8.0_65/* /alfresco/java/
+mv /tmp/jdk1.8.0_111/* /alfresco/java/
 
 # Remove temp zip
-rm -f /tmp/jdk1.8.0_65.zip
-rm -rf /tmp/jdk1.8.0_65
+rm -f /tmp/jdk-8u111-linux-x64.tar.gz
+rm -rf /tmp/jdk-8u111-linux-x64
