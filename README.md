@@ -1,4 +1,15 @@
 # Database
+
+### for MySQL
+`docker run --name alfresco-mysql -e MYSQL_DATABASE=alfresco -e MYSQL_USER=alfresco -e MYSQL_PASSWORD=alfresco -d mysql/mysql-server:5.7 --max-connections=275`
+
+Options:
+* `MYSQL_DATABASE` Database name in MySQL.
+* `MYSQL_USER` Owner of the database.
+* `MYSQL_PASSWORD` Password that should be used for the user.
+* `mysql:<version>` Name of the database image + version.
+
+### for PostgreSQL
 `docker run --name alfresco-postgres -e POSTGRES_DB=alfresco -e POSTGRES_USER=alfresco -e POSTGRES_PASSWORD=alfresco -p 5432 -d postgres:9.4`
 
 Options:
